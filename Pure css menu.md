@@ -1,6 +1,7 @@
 # Pure css menu
 
 ## Mise en place du markdown
+`index.html` :
 
 ```
 <nav>
@@ -24,4 +25,24 @@
 		</li>
 	</ul>
 </nav>
+```
+
+## Faire disparaitre les sous-menus
+
+### Ajouter une feuille de style
+
+`index.html` :
+
+```
+<link rel="stylesheet" type="text/css" href="theme.css">
+```
+
+### Modifier le style
+
+`theme.css` :
+
+```
+nav > ul > li > ul {
+    display: none;
+}
 ```
