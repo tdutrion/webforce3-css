@@ -46,3 +46,13 @@ nav > ul > li > ul {
     display: none;
 }
 ```
+
+## Afficher sous-menu au passage de la souris
+
+`theme.css` :
+
+```
+nav > ul > li:hover > ul {
+    display: block;
+}
+```
