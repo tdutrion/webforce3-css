@@ -16,13 +16,22 @@ nav {
     background: #ececec;
 }
 
+nav > ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
 nav > ul > li {
-    display: inline-block;
-    margin: 10px;
+    display: block;
+    padding: 1.2em;
+    height: 1.5em;
+    font-weight: bold;
 }
 
 nav > ul > li > ul {
     position: absolute;
     background-color: #ececec;
     list-style-type: none;
+    font-weight: normal;
 }

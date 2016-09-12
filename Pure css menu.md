@@ -83,3 +83,45 @@ nav > ul > li > ul {
 }
 ```
 
+## Remplacer inline-block par des flexbox
+
+[HTML5Please](http://html5please.com/) et [CanIUse](http://caniuse.com/#feat=flexbox) donnent l'état du composant sur les navigateurs.
+
+Consulter l'[article de CSS-tricks sur les flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/).
+
+Remplacer le `inline-block` de votre css par une flexbox sur le container parent :
+```
+nav > ul > li {
+    display: inline-block;
+    margin: 10px;
+}
+```
+
+Par la flexbox :
+
+```
+nav > ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+nav > ul > li {
+    display: block;
+    padding: 1.2em;
+    height: 1.5em;
+    font-weight: bold;
+}
+```
+
+Voir le détail de flexbox et experimenter.
+
+## Ajouter des animations
+
+[Page MDN des animations CSS](https://developer.mozilla.org/fr/docs/Web/CSS/animation)
+
+Ajouter une animation au passage de la souris sur un élément de menu de niveau 1. Changer la couleur de fond, ajouter des bordures et changer la couleur du texte au survol.
+
+```
+
+```
