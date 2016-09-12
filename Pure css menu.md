@@ -56,3 +56,30 @@ nav > ul > li:hover > ul {
     display: block;
 }
 ```
+
+## Positionner le menu de niveau 1
+
+`theme.css` :
+
+```
+html, body, nav, nav > ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background: #ececec;
+}
+
+nav > ul > li {
+    display: inline-block;
+    margin: 10px;
+}
+
+nav > ul > li > ul {
+    position: absolute;
+    background-color: #ececec;
+    list-style-type: none;
+}
+```
+
