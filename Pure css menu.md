@@ -116,12 +116,30 @@ nav > ul > li {
 
 Voir le détail de flexbox et experimenter.
 
-## Ajouter des animations
+## Ajouter des transitions
 
-[Page MDN des animations CSS](https://developer.mozilla.org/fr/docs/Web/CSS/animation)
+[Page MDN des transitions CSS](https://developer.mozilla.org/fr/docs/Web/CSS/transition)
 
-Ajouter une animation au passage de la souris sur un élément de menu de niveau 1. Changer la couleur de fond, ajouter des bordures et changer la couleur du texte au survol.
+Ajouter une transitions au passage de la souris sur un élément de menu de niveau 1. Changer la couleur de fond, ajouter des bordures et changer la couleur du texte au survol.
 
 ```
+nav > ul > li:hover {
+	background: black;
+	color: white;
+	border: white 1px solid;
+}
+```
 
+Noter que lors du survol sur certains navigateurs, le menu s'agrandit pour laisser la place aux bordures. Il faut donc changer le comportement du navigateur à l'aide d'une instruction `border-box` :
+
+```
+box-sizing: border-box;
+```
+
+[Border box sur MDN](https://developer.mozilla.org/fr/docs/Web/CSS/box-sizing)
+
+Ajouter enfin la transition : 
+
+```
+transition: all 0.5s ease-out;
 ```

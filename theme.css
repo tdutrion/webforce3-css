@@ -25,8 +25,8 @@ nav > ul {
 nav > ul > li {
     display: block;
     padding: 1.2em;
-    height: 1.5em;
     font-weight: bold;
+    box-sizing: inherit;
 }
 
 nav > ul > li > ul {
@@ -34,4 +34,11 @@ nav > ul > li > ul {
     background-color: #ececec;
     list-style-type: none;
     font-weight: normal;
+}
+
+nav > ul > li:hover {
+	background: black;
+	color: white;
+	border: white 1px solid;
+	transition: all 0.5s ease-out;
 }
